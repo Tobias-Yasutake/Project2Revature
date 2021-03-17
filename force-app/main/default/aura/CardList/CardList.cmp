@@ -1,0 +1,23 @@
+<aura:component controller="DeckGetter">
+    <aura:attribute name="data" type="Card__c[]"/>
+    <aura:attribute name="field" type="List" default=""/>
+    <aura:registerEvent name="CardtoAdd" type="c:CardtoAdd"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+        <lightning:buttonGroup>
+            <lightning:button label="Neutral" onclick="{!c.handleClass}"></lightning:button>
+            <lightning:button label="Guardian" onclick="{!c.handleClass}"></lightning:button>
+            <lightning:button label="Seeker" onclick="{!c.handleClass}"></lightning:button>
+            <lightning:button label="Rogue" onclick="{!c.handleClass}"></lightning:button>
+            <lightning:button label="Mystic" onclick="{!c.handleClass}"></lightning:button>
+            <lightning:button label="Survivor" onclick="{!c.handleClass}"></lightning:button>
+        </lightning:buttonGroup>
+    
+	<lightning:datatable aura:id="dataTable"
+                         data="{!v.data}"
+                         columns="{!v.field}"
+                         keyField="real_name__c"
+                         maxRowSelection="1"
+                         onrowselection="{!c.AddCard}"/>
+</aura:component>

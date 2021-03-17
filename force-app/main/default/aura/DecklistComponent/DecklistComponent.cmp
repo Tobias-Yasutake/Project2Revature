@@ -1,0 +1,20 @@
+<aura:component controller="DeckGetter">
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="field" type="List" default=""/>
+    <aura:registerEvent name="EditDeckEvent" type="c:EditDeckEvent"/>
+                        
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="CardtoAdd" event="c:CardtoAdd"
+        action="{!c.AddCard}"/>
+    <!--why doesn't this catch the card?-->
+    
+    <lightning:datatable aura:id="dataTable"
+                         data="{!v.data}"
+                         columns="{!v.field}"
+                         keyField="Deck Name"
+                         maxRowSelection="1"
+                         onrowselection="{!c.handleEditDeck}"/>
+    
+
+
+</aura:component>

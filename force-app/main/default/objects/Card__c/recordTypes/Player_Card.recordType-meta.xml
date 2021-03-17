@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Player_Card</fullName>
+    <active>true</active>
+    <description>Any card with a player back (or an investigator card?)</description>
+    <label>Player Card</label>
+</RecordType>

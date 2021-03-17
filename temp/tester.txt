@@ -1,0 +1,5 @@
+CardComponentController.Cardimage();
+upserter.upsertAll();
+CardComponentController.Cardimage('Lucky!');
+HTTPTest.HTTPcallout3();
+HTTPTest.HTTPcallout1();

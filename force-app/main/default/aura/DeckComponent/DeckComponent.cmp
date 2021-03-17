@@ -1,0 +1,13 @@
+<aura:component controller="CardDeleter">
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="field" type="List" default=""/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <lightning:datatable aura:id="dataTable"
+                         data="{!v.data}"
+                         columns="{!v.field}"
+                         keyField="Deck Name"
+                         maxRowSelection="1"
+                         onrowselection="{!c.Deletec}"/>
+    
+</aura:component>

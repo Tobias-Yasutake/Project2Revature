@@ -1,0 +1,16 @@
+<aura:component Controller="DeckGetter" >
+    <aura:attribute name="Decks" type="Deck__c[]"/>
+    <aura:attribute name="Deck" type="Copy__c[]"/>
+    
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="EditDeckEvent" event="c:EditDeckEvent"
+        		  action="{!c.handleEditDeck}"/>
+    
+    
+    <c:DecklistComponent data="{!v.Decks}"/>
+    <c:DeckComponent data="{!v.Deck}"/>
+    <c:CardList/>
+
+   
+</aura:component>

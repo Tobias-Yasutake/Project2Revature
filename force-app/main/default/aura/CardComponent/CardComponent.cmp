@@ -1,0 +1,12 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" controller="CardComponentController">
+    <aura:attribute name="search" type="String"/>
+    <aura:attribute name="image" type="String"/>
+    <p>Input Card Title</p>
+    <lightning:input name="Card Search" 
+                     label="Card Search" 
+                     value="{!v.search}"
+                     placeholder="ex: Roland Banks"/>
+    <Lightning:button label="Search For Card" onclick="{!c.handleClick}"/>
+    <img src="{!image}"/>
+    
+</aura:component>
