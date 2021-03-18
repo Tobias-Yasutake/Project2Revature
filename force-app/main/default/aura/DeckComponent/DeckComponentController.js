@@ -2,9 +2,7 @@
     doInit: function(component, event, helper) {
 		component.set('v.field', [
             {label: 'Card Code', fieldName: 'code__c', type: 'text'},
-            {label: 'Card Name', fieldName: 'real_name__c', type: 'text'},
-            //{label: 'Deck Edit', type: 'button', initialWidth: 135, typeAttributes: 
-            //{label: 'Edit Deck', name: 'view_details', onclick: '{!c.handleEdit}', title: 'Click to Edit this deck'}}, 
+            {label: 'Card Name', fieldName: 'real_name__c', type: 'text'}, 
         ]);
     },
        Deletec: function(component, event, helper) {

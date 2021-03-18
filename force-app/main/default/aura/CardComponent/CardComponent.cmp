@@ -7,6 +7,6 @@
                      value="{!v.search}"
                      placeholder="ex: Roland Banks"/>
     <Lightning:button label="Search For Card" onclick="{!c.handleClick}"/>
-    <img src="{!image}"/>
+    <img src="{!c.image}"/>
     
 </aura:component>

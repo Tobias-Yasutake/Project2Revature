@@ -26,7 +26,7 @@ public with sharing class DeckGetter {
     @AuraEnabled
     public static List<Card__c> GetFactionList(String input){
         try {
-            List<Card__c> cardmanifest = new List<Card__c>([SELECT real_name__c, name FROM Card__c WHERE faction_name__c = :input]);
+            List<Card__c> cardmanifest = new List<Card__c>([SELECT real_name__c, name, 	pack_name__c FROM Card__c WHERE faction_name__c = :input]);
             return cardmanifest;
         } catch (Exception e) {
             throw new AuraHandledException(e.getMessage());
@@ -44,5 +44,18 @@ public with sharing class DeckGetter {
             throw new AuraHandledException(e.getMessage());
         }
     }
+
+    @AuraEnabled
+    public static void DeleteCard(String input){
+        try {
+            Delete ([SELECT Id FROM Copy__c WHERE name = :input]);
+            //Copy__c[] deckmanifest = new Copy__c[]{};
+            //deckmanifest = ([SELECT name, real_name__c, code__c FROM Copy__c WHERE deck__r.Id = :asdf]);
+            //return deckmanifest;
+            } catch (Exception e) {
+            throw new AuraHandledException(e.getMessage());
+        }
+    }
+
 
 }

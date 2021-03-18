@@ -18,13 +18,12 @@
     <genericErrorPage>Exception</genericErrorPage>
     <inMaintenancePage>InMaintenance</inMaintenancePage>
     <indexPage>CommunitiesLanding</indexPage>
-    <masterLabel>AHLCG</masterLabel>
+    <masterLabel>Deckbuilder</masterLabel>
     <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
     <requireHttps>true</requireHttps>
     <selfRegPage>CommunitiesSelfReg</selfRegPage>
-    <siteAdmin>tobias.yasutake@resilient-impala-ho1dka.com</siteAdmin>
-    <siteGuestRecordDefaultOwner>tobias.yasutake@resilient-impala-ho1dka.com</siteGuestRecordDefaultOwner>
+    <siteAdmin>tobias.yasutake@curious-wolf-4v7ft7.com</siteAdmin>
+    <siteGuestRecordDefaultOwner>tobias.yasutake@curious-wolf-4v7ft7.com</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>
-    <subdomain>arkhamcards-developer-edition</subdomain>
-    <urlPathPrefix>visualforce</urlPathPrefix>
+    <subdomain>arkhamhorrorcards-developer-edition</subdomain>
 </CustomSite>

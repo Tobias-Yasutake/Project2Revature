@@ -1,4 +1,4 @@
-<aura:component controller="DeckGetter">
+<aura:component controller="DeckGetter" implements="forceCommunity:availableForAllPageTypes" access="global">
     <aura:attribute name="data" type="Object"/>
     <aura:attribute name="field" type="List" default=""/>
     <aura:registerEvent name="EditDeckEvent" type="c:EditDeckEvent"/>

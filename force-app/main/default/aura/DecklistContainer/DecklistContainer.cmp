@@ -1,4 +1,4 @@
-<aura:component Controller="DeckGetter" >
+<aura:component Controller="DeckGetter" implements="forceCommunity:availableForAllPageTypes" access="global">
     <aura:attribute name="Decks" type="Deck__c[]"/>
     <aura:attribute name="Deck" type="Copy__c[]"/>
     
