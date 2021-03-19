@@ -1,10 +1,8 @@
 # Project2Revature
 
-## Project Description
-
 Create and save decks for the game Arkham Horror the Living Card Game, published by Fantasy Flight Games. Look up the actual images of the cards being saved, regardless if what packs you own!
 
-## Technologies Used
+## Technologies Used:
 
 MCCV with: 
  - Aura Components
@@ -13,14 +11,14 @@ MCCV with:
 Consumes an external API (from Arkhamdb.com)
 
 
-## Features
+## Features:
 
 Load up a public community page!
 Look up any Arkham Horror Player Card by writing in its name
 Access decks created by the SysAdmin and look at their contents
 Edit those contents by adding or deleting cards 
 
-To-do list:
+## To-do list:
 
  - Handle all exceptions (what if a row isn't checked onclicked?) 
  - Make (create/delete) deck buttons
